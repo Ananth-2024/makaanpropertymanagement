@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makaan - Real Estate</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg rounded py-2 px-4">
+        <div class="container-fluid px-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./img/icon-deal.png" alt="Makaan Logo" width="50" height="50" class="border border-2 border-success rounded-circle">
+                <span class="fw-bold text-light fs-4 ms-2">Makaan</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active text-success fw-bold" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="propertyDropdown" role="button" data-bs-toggle="dropdown">
+                            Property
+                        </a>
+                        <ul class="dropdown-menu bg-dark border-0 shadow">
+                            <li><a class="dropdown-item text-light" href="#">Property List</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Property Type</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Property Agent</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu bg-dark border-0 shadow">
+                            <li><a class="dropdown-item text-light" href="#">Testimonials</a></li>
+                            <li><a class="dropdown-item text-light" href="#">404 Error</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-success ms-3 px-4 py-2 rounded-pill">+ Add Property</a>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <header class="hero-section d-flex align-items-center">
+        <div class="container-fluid px-3">
+            <div class="row align-items-center">
+                <!-- Right Side Image (Responsive for Mobile/Desktop) -->
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="./img/carousel-2.jpg" alt="Modern Home" class="img-fluid">
+                    <img src="./img/carousel-1.jpg" alt="Luxury Villa" class="img-fluid">
+                </div>
+                <!-- Left Side Content -->
+                <div class="content col-lg-6 order-2 order-lg-1">
+                    <h1 class="display-5 fw-bold text-dark">
+                        Discover Your <span class="text-success">Dream Home</span> Today
+                    </h1>
+                    <p class="text-muted">
+                        Explore a stunning collection of homes in prime locations. Whether you seek luxury, comfort, or affordability, we bring you the best properties tailored to your needs.
+                    </p>
+                    <a href="#" class="btn btn-success btn-lg">View Listings</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- <br><br><br><br> -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Search Bar Section -->
+    <section class="search-bar">
+        <div class="container">
+            <div class="row g-1">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Enter City, Area, or ZIP Code">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option selected>Choose Property Type</option>
+                        <option value="1">Apartment</option>
+                        <option value="2">Villa</option>
+                        <option value="3">Townhouse</option>
+                        <option value="4">Commercial</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option selected>Select Price Range</option>
+                        <option value="1">$50k - $200k</option>
+                        <option value="2">$200k - $500k</option>
+                        <option value="3">$500k - $1M</option>
+                        <option value="4">$1M+</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-success w-100">Find Property</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+
+    <section id="more" class="property-types py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Explore Property Categories</h2>
+                <center>
+                    <p class="text-muted contents">
+                        Discover a variety of properties to suit your needs, from cozy apartments to spacious villas. 
+                        Find the perfect space for living, working, or investing.
+                    </p>
+                </center>
+            </div>
+            <div class="property-grid">
+                <div class="property-box">
+                    <img src="./img/icon-apartment.png" alt="Apartment">
+                    <h3>Luxury Apartment</h3>
+                    <p>200+ Listings</p>
+                </div>
+                <div class="property-box">
+                    <img src="./img/icon-villa.png" alt="Villa">
+                    <h3>Beachfront Villa</h3>
+                    <p>150+ Listings</p>
+                </div>
+                <div class="property-box">
+                    <img src="./img/icon-house.png" alt="Home">
+                    <h3>Family Home</h3>
+                    <p>300+ Listings</p>
+                </div>
+                <div class="property-box">
+                    <img src="./img/icon-housing.png" alt="Office">
+                    <h3>Modern Office</h3>
+                    <p>120+ Listings</p>
+                </div>
+                <div class="property-box">
+                    <img src="./img/icon-building.png" alt="Commercial">
+                    <h3>Commercial Spaces</h3>
+                    <p>180+ Listings</p>
+                </div>
+                <div class="property-box">
+                    <img src="./img/icon-neighborhood.png" alt="Townhouse">
+                    <h3>Gated Townhouse</h3>
+                    <p>90+ Listings</p>
+                </div>
+                <div class="property-box">
+                    <img src="./img/icon-condominium.png" alt="Retail Shop">
+                    <h3>Retail Shop</h3>
+                    <p>80+ Listings</p>
+                </div>
+                <div class="property-box">
+                    <img src="./img/icon-luxury.png" alt="Penthouse">
+                    <h3>Luxury Penthouse</h3>
+                    <p>50+ Listings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- ------------------------------------------------------------------------------------------ -->
+
+<!-- HORIZONTAL CARD START -->
+<div class="property2-section">
+    <!-- Image Section -->
+    <div class="image-box">
+        <div class="green-frame"></div>
+        <img src="./img/about.jpg" alt="Luxury Property">
+    </div>
+
+    <!-- Text Content -->
+    <div class="property2-content">
+        <h2>Your Dream Home Awaits</h2>
+        <p>Discover stunning properties in prime locations. Whether you're looking for a cozy apartment or a luxurious villa, we have the perfect space for you.</p>
+
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Handpicked properties with premium features</li>
+            <li><i class="fas fa-check-circle"></i> Prime locations with excellent amenities</li>
+            <li><i class="fas fa-check-circle"></i> Expert guidance throughout your journey</li>
+        </ul>
+
+        <button class="btn-read-more">Explore More</button>
+    </div>
+</div>
+
+<!-- HORIZONTAL CARD END -->
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<!-- Section: Listings -->
+<section class="realty-section">
+    <h2>Explore Exclusive Properties</h2>
+    <p>Find the best properties available for purchase and rent. Your perfect home is just a click away.</p>
+
+    <!-- Filter Buttons -->
+    <div class="listing-filters">
+        <button class="filter-btn active">All Listings</button>
+        <button class="filter-btn">For Sale</button>
+        <button class="filter-btn">For Rent</button>
+        <button class="filter-btn">Luxury Homes</button>
+    </div>
+
+    <!-- Listings Grid -->
+    <div class="realty-grid">
+
+        <!-- Card 1 -->
+        <div class="realty-card">
+            <div class="realty-image">
+                <img src="./img/property-3.jpg" alt="Modern Apartment">
+                <span class="tag-sale">For Sale</span>
+                <span class="tag-type">Apartment</span>
+            </div>
+            <div class="realty-info">
+                <h3 class="price">$850,000</h3>
+                <h4 class="property-title">Luxury Downtown Apartment</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Manhattan, New York, USA</p>
+                <div class="realty-details">
+                    <span><i class="fas fa-expand"></i> 1,200 Sqft</span>
+                    <span><i class="fas fa-bed"></i> 3 Beds</span>
+                    <span><i class="fas fa-bath"></i> 2 Baths</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="realty-card">
+            <div class="realty-image">
+                <img src="./img/property-1.jpg" alt="Luxury Villa">
+                <span class="tag-rent">For Rent</span>
+                <span class="tag-type">Villa</span>
+            </div>
+            <div class="realty-info">
+                <h3 class="price">$3,500/mo</h3>
+                <h4 class="property-title">Beachfront Luxury Villa</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Malibu, California, USA</p>
+                <div class="realty-details">
+                    <span><i class="fas fa-expand"></i> 3,000 Sqft</span>
+                    <span><i class="fas fa-bed"></i> 5 Beds</span>
+                    <span><i class="fas fa-bath"></i> 4 Baths</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="realty-card">
+            <div class="realty-image">
+                <img src="./img/property-6.jpg" alt="Commercial Office">
+                <span class="tag-sale">For Sale</span>
+                <span class="tag-type">Office Space</span>
+            </div>
+            <div class="realty-info">
+                <h3 class="price">$1,200,000</h3>
+                <h4 class="property-title">Modern Business Center</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Downtown LA, USA</p>
+                <div class="realty-details">
+                    <span><i class="fas fa-expand"></i> 5,000 Sqft</span>
+                    <span><i class="fas fa-bed"></i> 10 Rooms</span>
+                    <span><i class="fas fa-bath"></i> 3 Restrooms</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<center>
+    <button class="btncard"><a href="#more">View More Listings</a></button>
+</center>
+
+<!-- Agent Contact Section -->
+<section class="agent-contact-section">
+    <div class="agent-container">
+        <div class="agent-image">
+            <img src="./img/call-to-action.jpg" alt="Trusted Real Estate Consultant">
+        </div>
+        <div class="agent-info">
+            <h2>Connect with Our Trusted Real Estate Experts</h2>
+            <p>Looking for the perfect home or investment opportunity? Our dedicated agents are here to assist you every step of the way.</p>
+            <div class="agent-buttons">
+                <button class="call-btn"><i class="fas fa-phone"></i> Speak to an Agent</button>
+                <button class="appointment-btn"><i class="fas fa-calendar"></i> Book a Consultation</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
+<section class="agents-section">
+    <h2 class="agents-title">Meet Our Expert Agents</h2>
+    <p class="agents-description">
+        Our dedicated team of real estate professionals is here to help you make the best property decisions. 
+        Get to know the experts who will guide you every step of the way!
+    </p>
+
+    <div class="agents-grid">
+        <!-- Agent 1 -->
+        <div class="agent-card">
+            <img src="./img/team-2.jpg" alt="Michael Johnson">
+            <div class="agent-info">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h3>Michael Johnson</h3>
+                <p>Lead Property Consultant</p>
+            </div>
+        </div>
+
+        <!-- Agent 2 -->
+        <div class="agent-card">
+            <img src="./img/team-1.jpg" alt="Sarah Williams">
+            <div class="agent-info">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h3>Sarah Williams</h3>
+                <p>Luxury Home Specialist</p>
+            </div>
+        </div>
+
+        <!-- Agent 3 -->
+        <div class="agent-card">
+            <img src="./img/team-3.jpg" alt="David Martinez">
+            <div class="agent-info">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h3>David Martinez</h3>
+                <p>Commercial Real Estate Expert</p>
+            </div>
+        </div>
+
+        <!-- Agent 4 -->
+        <div class="agent-card">
+            <img src="./img/team-4.jpg" alt="Emily Johnson">
+            <div class="agent-info">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h3>Emily Johnson</h3>
+                <p>Residential Property Consultant</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+
+<section class="testimonials-section">
+    <h2 class="testimonials-title">Hear From Our Happy Clients</h2>
+    <p class="testimonials-description">
+        See what our clients have to say about their experience with us. Your dream property is just a step away!
+    </p>
+
+    <div class="testimonials-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-box">
+            <p class="testimonial-text">
+                "The team provided exceptional service and helped me secure the perfect home. Their expertise made the process smooth and stress-free!"
+            </p>
+            <div class="testimonial-client">
+                <img src="./img/testimonial-1.jpg" alt="Emma Johnson">
+                <div class="client-info">
+                    <strong>Emma Johnson</strong>
+                    <p>Marketing Specialist</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-box">
+            <p class="testimonial-text">
+                "Selling my property was seamless, thanks to their guidance. I received multiple offers and closed at a great price!"
+            </p>
+            <div class="testimonial-client">
+                <img src="./img/testimonial-2.jpg" alt="Daniel Smith">
+                <div class="client-info">
+                    <strong>Daniel Smith</strong>
+                    <p>Financial Consultant</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-box">
+            <p class="testimonial-text">
+                "I found my dream apartment within days! The agents were knowledgeable and truly cared about my needs."
+            </p>
+            <div class="testimonial-client">
+                <img src="./img/testimonial-3.jpg" alt="Sophia Martinez">
+                <div class="client-info">
+                    <strong>Sophia Martinez</strong>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <!-- Contact Information -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, New York, USA</p>
+                <p><i class="fas fa-phone"></i> +1 (800) 987-6543</p>
+                <p><i class="fas fa-envelope"></i> info@realestatepro.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-column">
+                <h3>Stay Updated</h3>
+                <form action="#">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 <a href="#">RealEstatePro</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
